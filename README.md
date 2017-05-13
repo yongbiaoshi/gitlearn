@@ -110,4 +110,15 @@ Git is a version control system. Git is free software.
 - 建立本地分支和远程分支的关联，使用git branch --set-upstream branch-name origin/branch-name
 - 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突。
 
-测试dev分支推送
+### 标签管理
+
+#### 创建标签
+- 创建标签 git tag [-m \<msg\> | -F \<file\>] \<tagname\> [\<head\>]，创建标签，指定名称、版本号HEAD、描述信息
+- git tag -l 列表所有标签
+- git shwo \<tagname\> 查看标签说明
+
+#### 操作标签
+- 命令git push origin \<tagname\>可以推送一个本地标签；
+- 命令git push origin --tags可以推送全部未推送过的本地标签；
+- 命令git tag -d \<tagname\>可以删除一个本地标签；
+- 命令git push origin :refs/tags/\<tagname\>可以删除一个远程标签。
