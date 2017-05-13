@@ -42,3 +42,16 @@ Git is a version control system. Git is free software.
 > *注：解决方式就是手动编辑，然后git add、git commit*
 - 查看分支合并情况 git log --graph --pretty=oneline --abbrev-commit
 > *注：--graph：图表，--pretty=online：单行显示日志，--abbrev-commit：版本号缩写*
+#### 分支管理策略
+
+通常，合并分支时，如果可能，Git会用Fast forward模式，但这种模式下，删除分支后，会丢掉分支信息。如果要强制禁用Fast forward模式，Git就会在merge时生成一个新的commit，这样，从分支历史上就可以看出分支信息。
+
+在实际开发中，我们应该按照几个基本原则进行分支管理：
+1. 首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+2. 那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+
+**命令**
+- 切换到分支dev git checkout dev
+- 切回分支master git checkout master
+- 合并（禁用Fast forward） git merge --no-ff -m "merge with no-ff" dev
+> *注：因为本次合并要创建一个新的commit，所以加上-m参数，把commit描述写进去。*
