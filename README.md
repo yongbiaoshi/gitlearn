@@ -24,3 +24,6 @@ Git is a version control system. Git is free software.
 1. 在GitHub上创建一个新的仓库
 2. git remote add origin https://github.com/yongbiaoshi/gitlearn.git
 3. git push --set-upstream origin master 
+#### 从远程库克隆
+1. git clone https://github.com/yongbiaoshi/gitlearn.git
+> *注：Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。*
