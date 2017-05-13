@@ -12,4 +12,6 @@ Git is a version control system. Git is free software.
 >> 1. 未执行git add的修改，git checkout -- file
 >> 2. 已经执行git add放到暂存区的修改，git reset HEAD file 
 > 删除文件
+>> 删除本地文件 rm test.txt
+>> 删除版本库文件 git rm test.txt && git commit -m "remove test.txt"
 3. 远程仓库
