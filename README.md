@@ -27,3 +27,8 @@ Git is a version control system. Git is free software.
 #### 从远程库克隆
 1. git clone https://github.com/yongbiaoshi/gitlearn.git
 > *注：Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。*
+### 分支管理
+#### 创建与合并分支
+1. 创建分支 git branch dev
+2. 切换分支 git checkout dev
+3. 创建并切换分支 git checkout -b dev
