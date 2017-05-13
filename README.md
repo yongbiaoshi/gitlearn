@@ -6,7 +6,7 @@ Git is a version control system. Git is free software.
 ### 时光机穿梭
 #### 版本回退
 1. 查看log git log 或者 git log \<file\>
-2. 查看版本修改或者文件修改 git show \<file | logid\>
+2. 查看版本修改或者文件修改 git show \<file | versionId\>
 #### 工作区和暂存区
 
 #### 管理修改
@@ -38,4 +38,6 @@ Git is a version control system. Git is free software.
 - 删除分支：git branch -d \<name\>
 > *注：Git鼓励大量使用分支*
 #### 解决冲突
-Creating a new branch is quick & simple.
+- 冲突之后，手动解决冲突后再提交。git status查看冲突文件。
+- 查看分支合并情况 git log --graph --pretty=oneline --abbrev-commit
+> *注：--graph：图表，--pretty=online：单行显示日志，--abbrev-commit：版本号缩写*
