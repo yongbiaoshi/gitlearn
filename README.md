@@ -17,13 +17,10 @@ Git is a version control system. Git is free software.
 
 > 删除文件
 >> 删除本地文件 rm test.txt
-
 >> 删除版本库文件 git rm test.txt && git commit -m "remove test.txt"
 
 3. 远程仓库
 > 添加远程仓库
 >> 在GitHub上创建一个新的仓库
-
 >> git remote add origin https://github.com/yongbiaoshi/gitlearn.git
-
 >> git push --set-upstream origin master 
