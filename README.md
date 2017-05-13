@@ -5,7 +5,8 @@ Git is a version control system. Git is free software.
 ### 创建Git版本库
 ### 时光机穿梭
 #### 版本回退
-
+1. 查看log git log 或者 git log \<file\>
+2. 查看版本修改或者文件修改 git show \<file | logid\>
 #### 工作区和暂存区
 
 #### 管理修改
