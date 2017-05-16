@@ -35,7 +35,8 @@ Git is a version control system. Git is free software.
 - 查看所有分支：git branch -a
 - 创建分支：git branch \<name\>
 - 切换分支：git checkout \<name\>
-- 创建+切换分支：git checkout -b \<name\>
+- 创建+切换分支：git checkout -b \<name\> [origin\<remote branch name\>]
+- 创建并关联远程分支：git fetch origin 远程分支名:本地分支名
 - 合并某分支到当前分支：git merge \<name\>
 - 删除分支：git branch -d \<name\>
 > *注：Git鼓励大量使用分支*
